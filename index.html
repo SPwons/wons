@@ -26,16 +26,93 @@
                 transition: transform 0.3s ease;
             }
             .card:hover {
-                border: 2px solid yellow;
-                box-shadow: 0 0 5px yellow;
+                border: 2px solid rgb(89, 89, 89);
+                box-shadow: 0 0 5px rgb;
             }
             .card-wrapper {
                 display: flex;
                 flex-wrap: wrap;
             }
-        </style>
+        </style>   
 </head>
+<html>
+  <head>
+    <title>Page Title</title>
+    <style>
+      /* 헤드 막대 스타일 */
+      .header {
+        background-color: #333;
+        overflow: hidden;
+      }
 
+      /* 링크 스타일 */
+      .header a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      /* 활성화된 링크 스타일 */
+      .header a {
+        color: #a3a3a3; /* 기본 색상 */
+      }
+
+      .header a:hover {
+        color: #ffffff; /* 마우스를 올렸을 때 색상 */
+        cursor: pointer; /* 손가락 커서 설정 */
+      }
+      #header ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+      }
+
+      #header ul li {
+      display: inline-block;
+      }
+
+      #header ul li a {
+      display: block;
+      padding: 5px 10px;
+      }
+
+      #header ul li:nth-child(4)
+      #header ul li:nth-child(5)
+      {
+      float: right;
+      }
+      .header {
+      text-align: right;
+      }
+
+      .login, .signup {
+      display: inline-block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 헤드 막대 -->
+    <div class="header">
+      <a href="#order" class="active side-bar">주문하기</a>
+      <a href="#contact" class="side-bar">문의하기</a>
+      <a href="#cart">장바구니</a>
+      <div class="header">
+        <div class="login">
+          <a href="#">Login</a>
+        </div>
+        <div class="signup">
+          <a href="#">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
 <body>
     <div class="hero bg-dark text-center py-5">
         <h1 class="text-white">슈퍼원스 중고마켓</h1>
@@ -49,7 +126,7 @@
             <div class="card">
               <img src="https://source.unsplash.com/1600x900/?rice-cooker" class="card-img-top" alt="전기밥솥">
               <div class="card-body">
-                <h5 class="card-title">전기밥솥</h5>
+                <button onclick="window.open('https://naver.com')" class="btn btn-dark card-title">전기밥솥</button>
                 <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
                 <p class="card-text">한 번 밖에 안쓴 전기밥솥 팝니다. 부모님이 독립 할 때 주신 거에요!</p>
                 <a href="https://naver.com/" class="card-link stretched-link" target="_blank"></a>
@@ -60,7 +137,7 @@
             <div class="card">
               <img src="https://source.unsplash.com/1600x900/?chair" class="card-img-top" alt="의자">
               <div class="card-body">
-                <h5 class="card-title">의자</h5>
+                <button onclick="window.open('https://naver.com')" class="btn btn-dark card-title">의자</button>
                 <h6 class="card-subtitle mb-2 text-muted">3만원</h6>
                 <p class="card-text">사무실에서 사용한 의자 팝니다. 조절 가능한 팔걸이가 달려있어요.</p>
                 <a href="https://spartacodingclub.kr/" class="card-link stretched-link" target="_blank"></a>
@@ -71,7 +148,7 @@
             <div class="card">
               <img src="https://source.unsplash.com/1600x900/?laptop" class="card-img-top" alt="노트북">
               <div class="card-body">
-                <h5 class="card-title">노트북</h5>
+                <button onclick="window.open('https://naver.com')" class="btn btn-dark card-title">노트북</button>
                 <h6 class="card-subtitle mb-2 text-muted">30만원</h6>
                 <p class="card-text">삼성 노트북 판매합니다. 사용기간은 1년 정도이며, 상태는 깨끗합니다.</p>
                 <a href="https://spartacodingclub.kr/" class="card-link stretched-link" target="_blank"></a>
@@ -85,7 +162,7 @@
               <div class="card">
                 <img src="https://source.unsplash.com/1600x900/?cap" class="card-img-top" alt="모자">
                 <div class="card-body">
-                  <h5 class="card-title">모자</h5>
+                  <button onclick="window.open('https://naver.com')" class="btn btn-dark card-title">모자</button>
                   <h6 class="card-subtitle mb-2 text-muted">3만원</h6>
                   <p class="card-text">데일리한 이쁜 모자 판매 합니다. </p>
                   <a href="https://naver.com/" class="card-link stretched-link" target="_blank"></a>
@@ -96,7 +173,7 @@
               <div class="card">
                 <img src="https://source.unsplash.com/1600x900/?jeans" class="card-img-top" alt="청바지">
                 <div class="card-body">
-                  <h5 class="card-title">청바지</h5>
+                  <button onclick="window.open('https://naver.com')" class="btn btn-dark card-title">청바지</button>
                   <h6 class="card-subtitle mb-2 text-muted">5만원~30만원</h6>
                   <p class="card-text">최근 유행중인 트랜디한 청바지 판매 합니다.</p>
                   <a href="https://spartacodingclub.kr/" class="card-link stretched-link" target="_blank"></a>
@@ -107,7 +184,7 @@
               <div class="card">
                 <img src="https://source.unsplash.com/1600x900/?hearing aid" class="card-img-top" alt="보청기">
                 <div class="card-body">
-                  <h5 class="card-title">보청기</h5>
+                  <button onclick="window.open('https://naver.com')" class="btn btn-dark card-title">보청기</button>
                   <h6 class="card-subtitle mb-2 text-muted">30만원</h6>
                   <p class="card-text">음질을 최적화한 보청기 판매 합니다. </p>
                   <a href="https://spartacodingclub.kr/" class="card-link stretched-link" target="_blank"></a>
