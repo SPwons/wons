@@ -57,7 +57,7 @@
 
       /* 활성화된 링크 스타일 */
       .header a {
-        color: #a3a3a3; /* 기본 색상 */
+        color: #bebebe; /* 기본 색상 */
       }
 
       .header a:hover {
@@ -94,14 +94,31 @@
       margin-top: 10px;
       margin-bottom: 10px;
       }
+      .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+
+      .header a {
+      margin: 0 5px; /* 각 버튼 사이에 여백을 줍니다. */
+      }
+      .header a {
+      margin: 0 10px;
+      background-color: #헤더색상;
+      color: #배경색과 다른 글자색상;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-align: center;
+      }
     </style>
   </head>
   <body>
     <!-- 헤드 막대 -->
     <div class="header">
       <a href="#order" class="active side-bar">주문하기</a>
-      <a href="#contact" class="side-bar">문의하기</a>
       <a href="#cart">장바구니</a>
+      <a href="#contact" class="side-bar">문의하기</a>
       <div class="header">
         <div class="login">
           <a href="#">Login</a>
@@ -191,7 +208,40 @@
                 </div>
               </div>
             </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img src="https://source.unsplash.com/1600x900/?swimsuit" class="card-img-top" alt="수영복">
+                    <div class="card-body">
+                      <button onclick="window.open('https://naver.com')" class="btn btn-dark card-title">수영복</button>
+                      <h6 class="card-subtitle mb-2 text-muted">10만원</h6>
+                      <p class="card-text">여름철 핵! 인싸 아이템 수영복 입니다. </p>
+                      <a href="https://naver.com/" class="card-link stretched-link" target="_blank"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img src="https://source.unsplash.com/1600x900/?slipper" class="card-img-top" alt="슬리퍼">
+                    <div class="card-body">
+                      <button onclick="window.open('https://naver.com')" class="btn btn-dark card-title">슬리퍼</button>
+                      <h6 class="card-subtitle mb-2 text-muted">2만원</h6>
+                      <p class="card-text">언제 어디서나 편안하게 신을수 있는 슬리퍼 입니다.</p>
+                      <a href="https://spartacodingclub.kr/" class="card-link stretched-link" target="_blank"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img src="https://source.unsplash.com/1600x900/?scissors" class="card-img-top" alt="가위">
+                    <div class="card-body">
+                      <button onclick="window.open('https://naver.com')" class="btn btn-dark card-title">가위</button>
+                      <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
+                      <p class="card-text">쓱~싹! 쓱~싹! 잘짤리는 가위 입니다. </p>
+                      <a href="https://spartacodingclub.kr/" class="card-link stretched-link" target="_blank"></a>
+                    </div>
+                  </div>
+                </div>
           </div>
 </body>
-
-</html>
