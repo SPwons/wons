@@ -27,7 +27,7 @@
                 transition: transform 0.3s ease;
             }
             .card:hover {
-                border: 2px solid rgb(89, 89, 89);
+                border: 2px solid rgb(255, 253, 225);
                 box-shadow: 0 0 5px rgb;
             }
             .card-wrapper {
@@ -99,6 +99,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      height: 60px;
       }
 
       .header a {
@@ -112,22 +113,33 @@
       border-radius: 5px;
       text-align: center;
       }
+
+      .card {
+          color: #7b7b7b;
+      }
+
+      .card:hover {
+          color: #29c2ff;
+      }
+
+      .card-subtitle {
+          margin-top: 10px;
+          margin-bottom: 10px;
+      }
+
+      .card-subtitle {
+          font-weight: bold;
+      }
     </style>
   </head>
   <body>
     <!-- 헤드 막대 -->
     <div class="header">
-      <a href="#order" class="active side-bar">주문하기</a>
-      <a href="#cart">장바구니</a>
-      <a href="#contact" class="side-bar">문의하기</a>
-      <div class="header">
-        <div class="login">
-          <a href="#">Login</a>
-        </div>
-        <div class="signup">
-          <a href="#">Sign Up</a>
-        </div>
-      </div>
+      <button onclick="window.open('https://www.naver.com')" class="btn btn-primary card-title" style="background-color: #333; border-color: #333;">주문하기</button>
+      <button onclick="window.open('https://www.naver.com')" class="btn btn-primary card-title" style="background-color: #333; border-color: #333;">문의하기</button>
+      <button onclick="window.open('https://www.naver.com')" class="btn btn-primary card-title" style="background-color: #333; border-color: #333;">장바구니</button>
+      <button onclick="window.open('https://www.naver.com')" class="btn btn-primary card-title" style="background-color: #333; border-color: #333;">로그인</button>
+      <button onclick="window.open('https://www.naver.com')" class="btn btn-primary card-title" style="background-color: #333; border-color: #333;">회원가입</button>
     </div>
   </body>
 </html>
@@ -141,7 +153,7 @@
     <div class="container">
         <div class="row">
           <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card" style="background-color: #fffff8;">
               <img src="https://source.unsplash.com/1600x900/?rice-cooker" class="card-img-top" alt="전기밥솥">
               <div class="card-body">
                 <button onclick="window.open('https://naver.com')" class="btn btn-dark card-title">전기밥솥</button>
@@ -152,7 +164,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card" style="background-color: #fffff8;">
               <img src="https://source.unsplash.com/1600x900/?chair" class="card-img-top" alt="의자">
               <div class="card-body">
                 <button onclick="window.open('https://naver.com')" class="btn btn-dark card-title">의자</button>
@@ -163,7 +175,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card" style="background-color: #fffff8;">
               <img src="https://source.unsplash.com/1600x900/?laptop" class="card-img-top" alt="노트북">
               <div class="card-body">
                 <button onclick="window.open('https://naver.com')" class="btn btn-dark card-title">노트북</button>
@@ -177,7 +189,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4 mb-4">
-              <div class="card">
+              <div class="card" style="background-color: #fffff8;">
                 <img src="https://source.unsplash.com/1600x900/?cap" class="card-img-top" alt="모자">
                 <div class="card-body">
                   <button onclick="window.open('https://naver.com')" class="btn btn-dark card-title">모자</button>
@@ -188,7 +200,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-4">
-              <div class="card">
+              <div class="card" style="background-color: #fffff8;">
                 <img src="https://source.unsplash.com/1600x900/?jeans" class="card-img-top" alt="청바지">
                 <div class="card-body">
                   <button onclick="window.open('https://naver.com')" class="btn btn-dark card-title">청바지</button>
@@ -199,7 +211,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-4">
-              <div class="card">
+              <div class="card" style="background-color: #fffff8;">
                 <img src="https://source.unsplash.com/1600x900/?hearing aid" class="card-img-top" alt="보청기">
                 <div class="card-body">
                   <button onclick="window.open('https://naver.com')" class="btn btn-dark card-title">보청기</button>
@@ -212,7 +224,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-4 mb-4">
-                  <div class="card">
+                  <div class="card" style="background-color: #fffff8;">
                     <img src="https://source.unsplash.com/1600x900/?swimsuit" class="card-img-top" alt="수영복">
                     <div class="card-body">
                       <button onclick="window.open('https://naver.com')" class="btn btn-dark card-title">수영복</button>
@@ -223,7 +235,7 @@
                   </div>
                 </div>
                 <div class="col-md-4 mb-4">
-                  <div class="card">
+                  <div class="card" style="background-color: #fffff8;">
                     <img src="https://source.unsplash.com/1600x900/?slipper" class="card-img-top" alt="슬리퍼">
                     <div class="card-body">
                       <button onclick="window.open('https://naver.com')" class="btn btn-dark card-title">슬리퍼</button>
@@ -234,7 +246,7 @@
                   </div>
                 </div>
                 <div class="col-md-4 mb-4">
-                  <div class="card">
+                  <div class="card" style="background-color: #fffff8;">
                     <img src="https://source.unsplash.com/1600x900/?scissors" class="card-img-top" alt="가위">
                     <div class="card-body">
                       <button onclick="window.open('https://naver.com')" class="btn btn-dark card-title">가위</button>
